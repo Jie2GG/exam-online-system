@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/online-exam-system-backend/exam-backend.iml" filepath="$PROJECT_DIR$/online-exam-system-backend/exam-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/online-exam.iml" filepath="$PROJECT_DIR$/.idea/online-exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-exam-admin/online-exam-admin.iml" filepath="$PROJECT_DIR$/online-exam-admin/online-exam-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-exam-student/online-exam-student.iml" filepath="$PROJECT_DIR$/online-exam-student/online-exam-student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-exam-teacher/online-exam-teacher.iml" filepath="$PROJECT_DIR$/online-exam-teacher/online-exam-teacher.iml" />
+    </modules>
+  </component>
+</project>
