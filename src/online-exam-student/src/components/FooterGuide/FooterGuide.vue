@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer_guide border-1px">
+  <footer class="footer_guide border-1px" >
     <div class="guide_item" @click="goto('/home')" :class="{on: isCurrent('/home')}">
       <span class="item_icon">
         <i class="iconfont iconicon"></i>
@@ -7,18 +7,18 @@
       <span>首页</span>
     </div>
 
-    <div class="guide_item" @click="goto('/wrong')" :class="{on: isCurrent('/wrong')}">
-      <span class="item_icon">
-        <i class="iconfont iconcuoti"></i>
-      </span>
-      <span>错题</span>
-    </div>
+<!--    <div class="guide_item" @click="goto('/wrong')" :class="{on: isCurrent('/wrong')}">-->
+<!--      <span class="item_icon">-->
+<!--        <i class="iconfont iconcuoti"></i>-->
+<!--      </span>-->
+<!--      <span>错题</span>-->
+<!--    </div>-->
 
-    <div class="guide_item" @click="goto('/search')" :class="{on: isCurrent('/search')}">
+    <div class="guide_item" @click="goto('/exam')" :class="{on: isCurrent('/exam')}">
       <span class="item_icon">
         <i class="iconfont iconsousuo"></i>
       </span>
-      <span>搜索</span>
+      <span>试卷</span>
     </div>
 
     <div class="guide_item" @click="goto('/profile')" :class="{on: isCurrent('/profile')}">
@@ -83,7 +83,7 @@
       margin 5px
       color #999999
       &.on
-        color #02a774
+        color #06d6a0
       span
         font-size 12px
         margin-top 2px

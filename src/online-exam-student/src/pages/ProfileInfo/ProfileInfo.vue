@@ -20,10 +20,14 @@
     <mt-cell title="姓名" :value="userInfo.stuName"/>
     <mt-cell title="性别" :value="userInfo.stuSex"/>
     <mt-cell title="邮箱" :value="userInfo.stuEmail || '暂无绑定邮箱'"/>
-    <mt-cell title="手机号" :value="userInfo.stuPhone || '暂无绑定手机号'"/>
+    <!-- <mt-cell title="手机号" :value="userInfo.stuPhone || '暂无绑定手机号'"/> -->
     <mt-cell title="注册时间" :value="userInfo.stuCreateTime | date-format"/>
     <mt-cell title="最近登录时间" :value="userInfo.stuLastLoginTime | date-format"/>
     <mt-cell title="账号状态" :value="userInfo.stuStatus ? '正常' : '禁用'"/>
+    <div style="position: relative;top: 20px;">
+    <router-link to="/profile/infochange"><el-button style="width: 49%;" type="primary">修改信息</el-button></router-link>
+    <router-link to="/profile/pswchange"><el-button style="width: 49%;" type="danger">修改密码</el-button></router-link>
+</div>
   </section>
 </template>
 
@@ -55,4 +59,9 @@
       width 24px
       height 24px
       border-radius 50%
+
+  .mui-btn{
+    width 100px;
+    height 40px
+  }
 </style>

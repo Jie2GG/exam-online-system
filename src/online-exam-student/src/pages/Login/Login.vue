@@ -1,29 +1,24 @@
 <template>
   <section class="login-container">
     <!--利用$router.back()返回上一级路由 -->
-    <HeaderTop title="在线考试系统学生端">
+    <HeaderTop title="在线考试系统">
       <a href="javascript:" slot="left" class="go_back" @click="$router.goBack()">
         <i class="iconfont iconxiazai6"></i>返回
       </a>
 
-      <div class="header_message" slot="right">
-        <viewer>
-          <img src="../../common/imgs/school.jpg">
-        </viewer>
-      </div>
+<!--      <div class="header_message" slot="right">-->
+<!--        <viewer>-->
+<!--          <img src="../../common/imgs/school.jpg">-->
+<!--        </viewer>-->
+<!--      </div>-->
     </HeaderTop>
 
-    <!--显示登录注册页面Vue标志图标-->
-    <div class="login-logo">
-      <viewer>
-        <img src="../../common/imgs/college.jpg" class="logo_img">
-      </viewer>
-    </div>
+
 
     <!--实现登录功能-->
     <!--<transition name="el-fade-in">-->
-    <div class="login-wrap" v-show="showLogin">
-        <mt-field label="学号" placeholder="请输入12位数字学号" v-model="sno" :state="snoState" @blur.native.capture="checkSno"/>
+    <div class="login-wrap" style="margin-top: 20%" v-show="showLogin">
+        <mt-field label="学号" placeholder="请输入学号" v-model="sno" :state="snoState" @blur.native.capture="checkSno"/>
         <mt-field label="密码" placeholder="请输入密码" type="password" v-model="stuPsw" :state="pswState" @blur.native.capture="checkPsw" @keyup.enter.native="checkLogin"/>
         <mt-button type="primary" size="large" @click.native="checkLogin">登录</mt-button>
 
@@ -36,9 +31,9 @@
 
     <!--实现注册功能-->
     <!--<transition name="el-fade-in">-->
-    <div class="register-wrap" v-show="showRegister">
+    <div style="margin-top: 15px;" class="register-wrap" v-show="showRegister">
       <!--<p v-show="showTishi">{{tips}}</p>-->
-      <mt-field label="学号" placeholder="请输入12位数字学号" v-model="newSno" :state="newSnoState"
+      <mt-field label="学号" placeholder="请输入6-12位数字学号" v-model="newSno" :state="newSnoState"
                 @blur.native.capture="checkNewSno"/>
       <mt-field label="密码" placeholder="请输入至少6位数字密码" type="password" v-model="newPsw" :state="newPswState"
                 @blur.native.capture="checkNewPsw"/>
@@ -49,8 +44,8 @@
 
       <mt-field label="邮箱" placeholder="请输入邮箱" v-model="newEmail" :state="newEmailState"
                 @blur.native.capture="checkNewEmail"/>
-      <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="newPhone"
-                :state="newPhoneState" @blur.native.capture="checkNewPhone"/>
+      <!-- <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="newPhone"
+                :state="newPhoneState" @blur.native.capture="checkNewPhone"/> -->
       <mt-field label="安全码" placeholder="用于密码找回至少6位数字" type="password" v-model="newSecurityCode"
                 :state="newSecurityCodeState" @blur.native.capture="checknewSecurityCode"/>
       <mt-field label="确认安全码" placeholder="请再次输入安全码" type="password" v-model="newSecurityCodeConfirm"
@@ -66,13 +61,13 @@
     <!--</transition>-->
 
     <!--实现找回密码功能-->
-    <div class="find-psw-wrap" v-show="showFindPsw">
-      <mt-field label="学号" placeholder="请输入12位数字学号" v-model="findSno"
+    <div style="margin-top: 15px;" class="find-psw-wrap" v-show="showFindPsw">
+      <mt-field label="学号" placeholder="请输入6-12位数字学号" v-model="findSno"
                 :state="findSnoState" @blur.native.capture="checkfindSno"/>
-      <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="findPhone"
+      <!-- <mt-field label="手机号" placeholder="请输入手机号" type="tel" v-model="findPhone"
                 :state="findPhoneState" @blur.native.capture="checkfindPhone">
         <button class="get-captcha" @click="getCaptcha">获取验证码</button>
-      </mt-field>
+      </mt-field> -->
       <mt-field label="安全码" placeholder="请输入安全码校验找回" type="password" v-model="findSecurityCode"
                 :state="findSecurityCodeState" @blur.native.capture="checkfindSecurityCode"/>
       <mt-field label="新密码" placeholder="请输入新密码" type="password" v-model="findNewPsw"
@@ -139,7 +134,7 @@
         if (this.sno === '') {
           this.snoState = '';
         }
-        else if (!/^\d{12}$/.test(this.sno)){
+        else if (!/^\d{6,12}$/.test(this.sno)){
           this.snoState = 'error';
         }
         else{
@@ -236,7 +231,7 @@
         if (this.newSno === '') {
           this.newSnoState = '';
         }
-        else if (!/^\d{12}$/.test(this.newSno)){
+        else if (!/^\d{6,12}$/.test(this.newSno)){
           this.newSnoState = 'error';
         }
         else {
@@ -374,7 +369,7 @@
         if (this.findSno === '') {
           this.findSnoState = '';
         }
-        else if (!/^\d{12}$/.test(this.findSno)){
+        else if (!/^\d{6,12}$/.test(this.findSno)){
           this.findSnoState = 'error';
         }
         else {
@@ -477,7 +472,7 @@
       margin 20px auto
       text-align center
       margin-bottom 20px
-      background-image url("../../common/imgs/java.png"), url("../../common/imgs/cplus.png"), url("../../common/imgs/php.png"), url("../../common/imgs/android.png"), url("../../common/imgs/h5.png"), url("../../common/imgs/ios.png"), url("../../common/imgs/js.png"), url("../../common/imgs/python.png")
+      background-image url("/src/common/imgs/java.png"), url("../../common/imgs/cplus.png"), url("../../common/imgs/php.png"), url("../../common/imgs/android.png"), url("../../common/imgs/h5.png"), url("../../common/imgs/ios.png"), url("../../common/imgs/js.png"), url("../../common/imgs/python.png")
       background-size 50px 50px, 50px 50px, 50px 50px, 50px 50px, 44px 44px, 32px 32px, 28px 28px, 32px 32px
       background-repeat no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
       background-position 2% 5%, 95% 5%, 90% 40%, 12% 42%, 95% 80%, 5% 78%, 80% 100%, 18% 100%

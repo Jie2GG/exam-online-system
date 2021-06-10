@@ -88,6 +88,13 @@
             <version>1.4</version>
         </dependency>
 
+        <!-- FTP访问 -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+
         <!--用于移除嵌入式tomcat插件-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->

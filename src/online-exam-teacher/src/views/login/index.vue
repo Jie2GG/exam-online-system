@@ -1,7 +1,8 @@
 <template>
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
-      <h3 class="title">在线考试系统教师端</h3>
+      <h3 class="title">在线考试系统</h3>
+      <h5 class="title2">教师登录</h5>
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -28,10 +29,6 @@
           登录
         </el-button>
       </el-form-item>
-      <div class="tips">
-        <span style="margin-right:20px;">教工号: 123456</span>
-        <span> 密码: 123456</span>
-      </div>
     </el-form>
   </div>
 </template>
@@ -164,7 +161,7 @@ $light_gray:#eee;
   height: 100%;
   width: 100%;
   background-color: $bg;
-  background-image: url("http://qiniu.maweitao.top/backend-bg-img-min.png");
+   background-image: url("../../assets/images/loginbg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   .login-form {
@@ -196,10 +193,18 @@ $light_gray:#eee;
     display: inline-block;
   }
   .title {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 400;
     color: $light_gray;
-    margin: 0px auto 40px auto;
+    margin: -10px auto 12px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  .title2{
+    font-size: 20px;
+    font-weight: 100;
+    color: #baa3bc;
+    margin: 0px auto 20px auto;
     text-align: center;
     font-weight: bold;
   }

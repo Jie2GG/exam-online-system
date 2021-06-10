@@ -5,7 +5,9 @@ import App from './App'
 // 引入路由 其实就是router文件夹下的index.js配置好的路由表
 import router from './router'
 import store from './store'
-
+import elementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import 'muse-ui/lib/styles/theme.less';
 //按需引入Muse-UI组件
 import { Radio, Checkbox, TextField, Button, Icon } from 'muse-ui';
 // import 'muse-ui/lib/styles/base.less';
@@ -14,7 +16,10 @@ Vue.use(Checkbox);
 Vue.use(TextField);
 Vue.use(Button);
 Vue.use(Icon);
-import 'muse-ui/lib/styles/theme.less';
+
+
+Vue.use(elementUI);
+
 
 //引入Vant组件
 /*import Popup from 'vant/lib/popup';

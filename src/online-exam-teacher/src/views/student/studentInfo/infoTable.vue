@@ -57,11 +57,11 @@
           <span>{{ scope.row.stuEmail || '暂无绑定邮箱' }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="手机号" align="center" width="140">
+      <!-- <el-table-column label="手机号" align="center" width="140">
         <template slot-scope="scope">
           <span>{{ scope.row.stuPhone || '暂无绑定手机号' }}</span>
         </template>
-      </el-table-column>
+      </el-table-column> -->
       <el-table-column prop="stuCreateTime" sortable label="注册时间" align="center" width="160">
         <template slot-scope="scope">
           <span>{{ scope.row.stuCreateTime | date-format }}</span>

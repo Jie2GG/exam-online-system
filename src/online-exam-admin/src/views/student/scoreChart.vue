@@ -5,7 +5,7 @@
         <el-option v-for="item in paperNameOptions" :key="item.key" :label="item.label" :value="item.key"/>
       </el-select>
     </div>
-    <chart height="98%" width="100%"/>
+    <chart height="92%" width="100%"/>
   </div>
 </template>
 
@@ -66,4 +66,3 @@ export default {
     }
   }
 </style>
-

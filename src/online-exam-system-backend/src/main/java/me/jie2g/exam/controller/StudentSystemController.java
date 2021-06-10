@@ -2,11 +2,7 @@ package me.jie2g.exam.controller;
 
 import me.jie2g.exam.domain.Student;
 import me.jie2g.exam.service.StudentSystemService;
-import me.jie2g.exam.util.EmailUtil;
-import me.jie2g.exam.util.FileStorageUtil;
-import me.jie2g.exam.util.MobilePhoneUtil;
-import me.jie2g.exam.util.ServerResponse;
-import org.apache.poi.util.StringUtil;
+import me.jie2g.exam.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Date;
@@ -35,6 +30,9 @@ public class StudentSystemController {
 	
 	@Autowired
 	private StudentSystemService studentSystemService;
+	
+	@Autowired
+	private FileStoreUtils fileStoreUtils;
 	
 	//Log4j日志处理
 	public static Logger log = LoggerFactory.getLogger (StudentSystemController.class);
@@ -125,8 +123,8 @@ public class StudentSystemController {
 		boolean isRegistered = studentSystemService.snoIsExist (sno);
 		if (isRegistered) {
 			return ServerResponse.createByError ("此学号已被注册");
-		} else if (sno.length () != 12) {
-			return ServerResponse.createByError ("学号长度为12位");
+		} else if (!(sno.length () >= 6 && sno.length () <= 12)) {
+			return ServerResponse.createByError ("学号长度为6~12位");
 		} else if (stuPsw.isEmpty ()) {
 			return ServerResponse.createByError ("密码为空");
 		} else if (stuPsw.length () < 6) {
@@ -141,11 +139,13 @@ public class StudentSystemController {
 			return ServerResponse.createByError ("邮箱为空");
 		} else if (!EmailUtil.isEmail (stuEmail)) {
 			return ServerResponse.createByError ("邮箱格式不正确");
-		} else if (stuPhone.isEmpty ()) {
-			return ServerResponse.createByError ("手机号为空");
-		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
-			return ServerResponse.createByError ("手机号不合法");
-		} else if (stuSecurityCode.isEmpty ()) {
+		}
+//		else if (stuPhone.isEmpty ()) {
+//			return ServerResponse.createByError ("手机号为空");
+//		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
+//			return ServerResponse.createByError ("手机号不合法");
+//		}
+		else if (stuSecurityCode.isEmpty ()) {
 			return ServerResponse.createByError ("安全码为空");
 		} else if (stuSecurityCode.length () < 6) {
 			return ServerResponse.createByError ("安全码长度至少为6位");
@@ -176,13 +176,15 @@ public class StudentSystemController {
 		
 		if (sno.isEmpty ()) {
 			return ServerResponse.createByError ("学号为空");
-		} else if (sno.length () != 12) {
-			return ServerResponse.createByError ("学号长度为12位");
-		} else if (stuPhone.isEmpty ()) {
-			return ServerResponse.createByError ("手机号为空");
-		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
-			return ServerResponse.createByError ("手机号不合法");
-		} else if (securityCode.isEmpty ()) {
+		} else if (!(sno.length () >= 6 && sno.length () <= 12)) {
+			return ServerResponse.createByError ("学号长度为6~12位");
+		}
+//		else if (stuPhone.isEmpty ()) {
+//			return ServerResponse.createByError ("手机号为空");
+//		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
+//			return ServerResponse.createByError ("手机号不合法");
+//		}
+		else if (securityCode.isEmpty ()) {
 			return ServerResponse.createByError ("安全码为空");
 		} else if (securityCode.length () < 6) {
 			return ServerResponse.createByError ("安全码长度至少为6位");
@@ -297,11 +299,13 @@ public class StudentSystemController {
 			return ServerResponse.createByError ("邮箱为空");
 		} else if (!EmailUtil.isEmail (stuEmail)) {
 			return ServerResponse.createByError ("邮箱格式不正确");
-		} else if (stuPhone.isEmpty ()) {
-			return ServerResponse.createByError ("手机号为空");
-		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
-			return ServerResponse.createByError ("手机号不合法");
-		} else if (stuName.equals (student.getStuName ()) && stuSex.equals (student.getStuSex ())
+		}
+//		else if (stuPhone.isEmpty ()) {
+//			return ServerResponse.createByError ("手机号为空");
+//		} else if (!MobilePhoneUtil.isMobileNO (stuPhone)) {
+//			return ServerResponse.createByError ("手机号不合法");
+//		}
+		else if (stuName.equals (student.getStuName ()) && stuSex.equals (student.getStuSex ())
 				&& stuEmail.equals (student.getStuEmail ()) && stuPhone.equals (student.getStuPhone ())
 				&& stuImgSrc == null) {
 			return ServerResponse.createByError ("信息修改与之前一致");
@@ -311,18 +315,13 @@ public class StudentSystemController {
 				// 删除旧图
 				String oldImage = student.getStuImgSrc ();
 				if (!StringUtils.isEmpty (oldImage)) {
-					FileStorageUtil.deleteImage (oldImage);
+					this.fileStoreUtils.deleteImage (oldImage);
 				}
 				
+				String fileName = FileStoreUtils.getFileName ("jpg");
+				String url = this.fileStoreUtils.saveImage (stuImgSrc.getBytes (), fileName);
+				
 				// 保存图片
-				String fileName = FileStorageUtil.getFileName ("jpg");
-				String image = FileStorageUtil.saveImage (stuImgSrc.getBytes (), fileName);
-				String url = FileStorageUtil.getExternalPath (
-						request.getScheme (),
-						request.getServerName (),
-						80,
-						image
-				);
 				student.setStuImgSrc (url);
 			}
 			student.setStuName (stuName);

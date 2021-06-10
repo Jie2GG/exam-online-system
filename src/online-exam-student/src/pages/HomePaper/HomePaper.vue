@@ -13,9 +13,9 @@
       </div>
     </HeaderTop>
 
-    <div class="lang_desc">
+  <!--  <div class="lang_desc">
       <span>{{languageInfoById.langDesc}}</span>
-    </div>
+    </div> -->
 
     <!--教师公告无缝跑马灯-->
     <div class="notices_run">
@@ -30,11 +30,7 @@
       </vue-seamless-scroll>
     </div>
 
-    <div class="search_btn" @click="showPopup = true" v-show="showSearchBtn">
-      <mu-button fab color="teal" >
-        <mu-icon value="search"></mu-icon>
-      </mu-button>
-    </div>
+    
 
     <div class="paper_screen">
       <mt-popup v-model="showPopup" position="bottom" style="width: 100%">

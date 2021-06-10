@@ -1,21 +1,12 @@
 <template>
   <div :class="['dashboard-container',{'dashboard-padding' : device !=='mobile'}]">
-    <div class="admin_info">
-      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 7}" :xl="{span: 7}">
-        <box-card />
-      </el-col>
-      <!--<pan-thumb :image="admImg" style="float: left">
-        <span class="pan-info-roles">教师端</span>
-      </pan-thumb>-->
-    </div>
-
-    <div>
-      <img :src="emptyGif" class="emptyGif">
+    <div class="exam_info" style="margin-top:-50px;">
+      <ScoreChart></ScoreChart>
     </div>
   </div>
 </template>
 
-<script>
+<script>import ScoreChart from '../student/scoreChart.vue'
 import { mapGetters } from 'vuex'
 import PanThumb from '@/components/PanThumb'
 import BoxCard from './components/BoxCard'
@@ -24,7 +15,8 @@ export default {
   name: 'Dashboard',
   components: {
     PanThumb,
-    BoxCard
+    BoxCard,
+    ScoreChart
   },
   data() {
     return {

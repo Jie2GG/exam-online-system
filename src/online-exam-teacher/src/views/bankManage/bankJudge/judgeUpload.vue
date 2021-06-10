@@ -13,6 +13,9 @@
 </template>
 
 <script>
+  import {
+    reqGetSubjectsList
+  } from '@/api/paper'
 import UploadExcelComponent from '@/components/UploadExcel/index.vue'
 import waves from '@/directive/waves' // Waves directive
 import { reqInsertJudgeList } from '@/api/bankManage'
@@ -24,18 +27,30 @@ export default {
     return {
       downloadLoading: false,
       tableData: [],
-      tableHeader: []
+      tableHeader: [],
+      subList: [],
+      subList:''
     }
   },
   methods: {
-    handleDownload() {
+    async handleDownload() {
+      this.subList = await reqGetSubjectsList()
+      let subleng = this.subList.data.length
+      let subList = "(必填)所属科目("
+      for (let i = 0; i < subleng - 1; i++) {
+        let a = (this.subList.data[i].langName + "填" + this.subList.data[i].langId + ",")
+        subList = subList + a
+      }
+      subList = subList + (this.subList.data[subleng - 1].langName + "填" + this.subList.data[subleng - 1].langId +
+        ")")
+        this.subList=subList
       this.downloadLoading = true
       import('@/vendor/Export2Excel').then(excel => {
         const tHeader = [
           '(必填)题目内容',
           '(必填)题目答案(正确填写T,错误填写F)',
           '(选填)答案解析',
-          '(必填)所属科目(Java填1,C++填2,Android填3,IOS填4,php填5,Python填6,Ruby填7,Go填8,JavaScript填9)'
+          subList
         ]
         excel.export_json_to_excel({
           header: tHeader,
@@ -72,7 +87,7 @@ export default {
           if (key === '(选填)答案解析') {
             judge.answerExplain = item[key]
           }
-          if (key === '(必填)所属科目(Java填1,C++填2,Android填3,IOS填4,php填5,Python填6,Ruby填7,Go填8,JavaScript填9)') {
+          if (key === this.subList) {
             judge.langId = item[key]
           }
         })

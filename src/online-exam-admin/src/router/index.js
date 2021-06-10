@@ -84,12 +84,6 @@ export const constantRouterMap = [
         name: 'ScoreTable',
         component: () => import('@/views/student/scoreTable'),
         meta: { title: '成绩管理', icon: 'score' }
-      },
-      {
-        path: 'score-chart',
-        name: 'ScoreChart',
-        component: () => import('@/views/student/scoreChart'),
-        meta: { title: '成绩图表', icon: 'chart' }
       }
     ]
   },
@@ -154,31 +148,6 @@ export const constantRouterMap = [
       }
     ]
   },
-
-  {
-    path: 'my-homepage',
-    component: Layout,
-    children: [
-      {
-        path: 'http://maweitao.top',
-        meta: { title: '个人主页', icon: 'link' }
-      }
-    ]
-  },
-
-  {
-    path: '/test',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: 'Test',
-        component: () => import('@/views/test/index'),
-        meta: { title: '测试页面', icon: 'test' }
-      }
-    ]
-  },
-
   { path: '*', redirect: '/404', hidden: true }
 ]
 

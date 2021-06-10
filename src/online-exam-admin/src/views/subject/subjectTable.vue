@@ -101,7 +101,7 @@
             :on-success="handleAvatarSuccess"
             :before-upload="beforeAvatarUpload"
             class="avatar-uploader"
-            action="/api/teacher/uploadPicture">
+            action="http://47.99.117.35:8080/api/teacher/uploadPicture">
             <img v-if="temp.langImgSrc" :src="temp.langImgSrc" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon"/>
           </el-upload>
@@ -130,15 +130,6 @@
     <el-tooltip placement="top" content="返回顶部">
       <back-to-top :custom-style="myBackToTopStyle" :visibility-height="300" :back-position="50" transition-name="fade" />
     </el-tooltip>
-
-    <el-dialog :visible.sync="dialogRotationImgVisible" title="轮播图预览">
-      <el-carousel :interval="4000">
-        <el-carousel-item v-for="item in list" :key="item.imgId">
-          <img :src="item.imgSrc" style="width: 100%;height: 100%">
-          <h3>{{ item.imgTitle }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-    </el-dialog>
   </div>
 </template>
 
@@ -175,7 +166,6 @@ export default {
       },
       dialogFormVisible: false,
       dialogStatus: '',
-      dialogRotationImgVisible: false,
       rules: {
         langName: [{ required: true, message: '科目名称为必填项', trigger: 'change' }],
         langDesc: [{ required: true, message: '科目描述为必填项', trigger: 'change' }],

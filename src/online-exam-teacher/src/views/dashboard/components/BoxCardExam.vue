@@ -1,58 +1,11 @@
 <template>
   <el-card class="box-card-component">
-    <div slot="header" class="box-card-header">
-
-    </div>
-    <div style="position:relative;">
-      <pan-thumb :image="teaImg" class="panThumb" />
-      <mallki class-name="mallki-text" text="在线考试系统教师端" />
-      <div style="padding-top:35px;" class="progress-item">
-        <div class="info_item">
-          <span>教师ID</span>
-          <span>{{ userInfo.tno }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-      <div class="progress-item">
-        <div class="info_item">
-          <span>姓名</span>
-          <span>{{ userInfo.teaName }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-      <div class="progress-item">
-        <div class="info_item">
-          <span>性别</span>
-          <span>{{ userInfo.teaSex }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-      <div class="progress-item">
-        <div class="info_item">
-          <span>邮箱</span>
-          <span>{{ userInfo.teaEmail }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-      <div class="progress-item">
-        <div class="info_item">
-          <span>手机号码</span>
-          <span>{{ userInfo.teaPhone }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-      <div class="progress-item">
-        <div class="info_item">
-          <span>最近登录时间</span>
-          <span>{{ userInfo.teaLastLoginTime | date-format }}</span>
-        </div>
-        <el-progress :percentage="100" status="success" />
-      </div>
-    </div>
+    <div><ScoreChart></ScoreChart></div>
   </el-card>
 </template>
 
 <script>
+  import ScoreChart from '../../student/scoreChart.vue'
 import { mapGetters } from 'vuex'
 import PanThumb from '@/components/PanThumb'
 import Mallki from '@/components/TextHoverEffect/Mallki'
@@ -78,6 +31,7 @@ export default {
       }
     }
   },
+  components:{ScoreChart},
   computed: {
     ...mapGetters([
       'userInfo'

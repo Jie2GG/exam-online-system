@@ -40,7 +40,7 @@ export default {
       this.downloadLoading = true
       import('@/vendor/Export2Excel').then(excel => {
         const tHeader = [
-          '(必填)学号(12位数字)',
+          '(必填)学号(6-12位数字)',
           '(必填)姓名',
           '(必填)性别(填男或者女)'
         ]
@@ -70,7 +70,7 @@ export default {
       results.forEach((item, index) => {
         const student = {}
         Object.keys(item).forEach((key) => {
-          if (key === '(必填)学号(12位数字)') {
+          if (key === '(必填)学号(6-12位数字)') {
             student.sno = (String)(item[key])
           }
           if (key === '(必填)姓名') {

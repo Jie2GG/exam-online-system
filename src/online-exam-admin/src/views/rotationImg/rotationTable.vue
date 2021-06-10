@@ -77,11 +77,11 @@
         </el-form-item>
         <el-form-item label="轮播图片" prop="imgSrc">
           <el-upload
-            :show-file-list="false"
+            :show-file-list="true"
             :on-success="handleAvatarSuccess"
             :before-upload="beforeAvatarUpload"
             class="avatar-uploader"
-            action="/api/teacher/uploadPicture">
+            action="http://47.99.117.35:8080/api/teacher/uploadPicture">
             <img v-if="temp.imgSrc" :src="temp.imgSrc" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon"/>
           </el-upload>

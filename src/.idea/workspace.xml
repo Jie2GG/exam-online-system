@@ -5,23 +5,316 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fc1be82-fa1c-4443-91c5-6a88f2139a7f" name="默认变更列表" comment="更正数据库">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/FileStoreUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/exam_backend_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/exam_backend_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-student/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.postcssrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.postcssrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/check-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/vue-loader.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/vue-loader.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/build/webpack.prod.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/mock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/mock/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/mock/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/mock/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/mock/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/mock/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/mock/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/mock/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/online-exam-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/online-exam-admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/bankManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/bankManage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/feedback.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/feedback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/paper.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/paper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/rotationImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/rotationImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/subject.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/subject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/api/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/api/teacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/BackToTop/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/BackToTop/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Charts/mixChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Charts/mixChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Charts/mixins/resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Charts/mixins/resize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Emotion/Emotion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Emotion/Emotion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Emotion/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Emotion/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Hamburger/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Hamburger/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Pagination/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Pagination/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/PanThumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/PanThumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/Screenfull/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/Screenfull/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/SvgIcon/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/TextHoverEffect/Mallki.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/TextHoverEffect/Mallki.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/components/UploadExcel/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/components/UploadExcel/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/config/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/config/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/waves.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/waves.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/waves.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/directive/waves/waves.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/icons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/icons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/icons/svg/eye-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/icons/svg/eye-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/icons/svgo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/icons/svgo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/store/modules/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/store/modules/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/store/modules/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/store/modules/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/element-ui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/element-ui.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/mUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/mUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/scrollTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/scrollTo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/utils/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/vendor/Export2Excel.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/vendor/Export2Excel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/dashboard/components/BoxCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/dashboard/components/BoxCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/dashboard/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/feedback/feedbackTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/feedback/feedbackTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/AppMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/AppMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/Item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/layout/mixin/ResizeHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/layout/mixin/ResizeHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/paper/paperInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/paper/paperInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/rotationImg/rotationTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/rotationImg/rotationTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/components/BookTypeOption.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/components/BookTypeOption.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/scoreChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/scoreChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/scoreTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/scoreTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/infoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/infoTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/infoUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/student/studentInfo/infoUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/subject/subjectTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/subject/subjectTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/teacher/infoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/teacher/infoTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/teacher/infoUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/teacher/infoUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-admin/src/views/test/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-admin/src/views/test/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/.postcssrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/.postcssrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/check-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/vue-loader.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/vue-loader.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/build/webpack.prod.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/config/test.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/config/test.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/online-exam-student.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/online-exam-student.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/api/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/api/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/common/imgs/college.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/common/imgs/college.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/common/stylus/mixins.styl" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/common/stylus/mixins.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/BackToTop/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/BackToTop/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Emotion/Emotion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Emotion/Emotion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Emotion/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Emotion/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/FooterGuide/FooterGuide.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/FooterGuide/FooterGuide.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/ProfileItem/ProfileItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/ProfileItem/ProfileItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Schart/BarSchart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Schart/BarSchart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Schart/LineSchart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Schart/LineSchart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Schart/PieSchart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Schart/PieSchart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Schart/RingSchart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Schart/RingSchart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Star/Star.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Star/Star.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/components/Swiper/Swiper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/components/Swiper/Swiper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/icons-extra.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/icons-extra.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/mui.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/mui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/mui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/lib/mui/css/mui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/lib/mui/js/mui.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/lib/mui/js/mui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/lib/mui/js/mui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/lib/mui/js/mui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/mock/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/mock/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/mock/mockServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/mock/mockServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/Home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/Home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaper/HomePaper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaper/HomePaper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperDetail/HomePaperDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperDetail/HomePaperDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/HomePaperStart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/HomePaperStart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/PaperCard/PaperCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/PaperCard/PaperCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/PaperContainer/PaperContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/HomePaperStart/PaperContainer/PaperContainer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/Login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/Profile/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/Profile/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/FillCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/FillCollection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/JudgeCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/JudgeCollection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/MultipleCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/MultipleCollection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/SingleCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileCollectionDetail/SingleCollection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileExamCalendar/ProfileExamCalendar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileExamCalendar/ProfileExamCalendar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileFeedback/ProfileFeedback.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileFeedback/ProfileFeedback.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileInfo/ProfileInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileInfo/ProfileInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileInfoChange/ProfileInfoChange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileInfoChange/ProfileInfoChange.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfilePswChange/ProfilePswChange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfilePswChange/ProfilePswChange.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileReplyDetail/ProfileReplyDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileReplyDetail/ProfileReplyDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileScoreDetail/ProfileScoreDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileScoreDetail/ProfileScoreDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileStuScore/ProfileStuScore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileStuScore/ProfileStuScore.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileWrongCollection/ProfileWrongCollection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/ProfileWrongCollection/ProfileWrongCollection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/Search/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/Search/Search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/Wrong/Wrong.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/Wrong/Wrong.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/pages/WrongDetail/WrongDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/pages/WrongDetail/WrongDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/mutation-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/mutation-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/mutations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/src/utils/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/src/utils/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/static/css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/static/css/animate.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/static/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/static/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/e2e/custom-assertions/elementCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/e2e/nightwatch.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/e2e/nightwatch.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/e2e/runner.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/e2e/runner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/e2e/specs/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/e2e/specs/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/unit/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/unit/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/unit/jest.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/unit/jest.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/unit/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/unit/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-student/test/unit/specs/HelloWorld.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-student/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/config/ApplicationConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/StudentSystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/StudentSystemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/TeacherBankManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/TeacherBankManageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/TeacherPaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/TeacherPaperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/service/TeacherPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/service/TeacherPaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/service/impl/TeacherPaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/service/impl/TeacherPaperServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/FileStorageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/FileStorageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/ExcelUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/FileStorageUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/PaperWordUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/PaperWordUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/util/ProfileImageSavaUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/test/java/me/jie2g/exam/util/FileStorageUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/test/java/me/jie2g/exam/util/FileStorageUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/online-exam-system-backend/src/test/java/me/jie2g/exam/util/PaperWordUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-system-backend/src/test/java/me/jie2g/exam/util/PaperWordUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.eslintignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.postcssrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.postcssrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/check-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/vue-loader.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/vue-loader.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/build/webpack.prod.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/mock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/mock/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/mock/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/mock/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/mock/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/mock/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/mock/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/mock/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/online-exam-teacher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/online-exam-teacher.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/bankManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/bankManage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/notice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/paper.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/paper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/student.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/student.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/api/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/api/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/BackToTop/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/BackToTop/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Breadcrumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Breadcrumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Charts/mixChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Charts/mixChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Charts/mixins/resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Charts/mixins/resize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Hamburger/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Hamburger/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Pagination/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Pagination/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/PanThumb/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/PanThumb/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/Screenfull/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/Screenfull/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/SvgIcon/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/SvgIcon/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/TextHoverEffect/Mallki.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/TextHoverEffect/Mallki.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/components/UploadExcel/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/components/UploadExcel/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/config/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/config/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/waves.css" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/waves.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/waves.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/directive/waves/waves.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/icons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/icons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/icons/svg/eye-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/icons/svg/eye-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/icons/svgo.yml" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/icons/svgo.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/teacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/store/modules/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/element-ui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/element-ui.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/mixin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/transition.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/transition.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/styles/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/mUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/mUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/scrollTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/scrollTo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/utils/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/utils/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/vendor/Export2Excel.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/vendor/Export2Excel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/404.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/fillInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/fillInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/fillUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/fillUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankFill/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/judgeInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/judgeInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/judgeUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankJudge/judgeUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/multipleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/multipleInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/multipleUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankMultiple/multipleUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/singleInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/singleInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/singleUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/bankManage/bankSingle/singleUpload.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/dashboard/components/BoxCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/dashboard/components/BoxCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/dashboard/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/dashboard/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/AppMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/AppMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/Item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/Link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/Link.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/Sidebar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/mixin/ResizeHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/layout/mixin/ResizeHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/notice/infoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/notice/infoTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/paper/paperInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/paper/paperInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/components/BookTypeOption.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/components/BookTypeOption.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/scoreChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/scoreChart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/scoreTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/scoreTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/infoTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/infoTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/infoUpload.vue" beforeDir="false" afterPath="$PROJECT_DIR$/online-exam-teacher/src/views/student/studentInfo/infoUpload.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +328,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Annotation" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -52,6 +345,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1snNuvRCpsvIVXgzMT9MgOr0Dqr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,7 +375,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -101,7 +395,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileStorageUtilTest.testSaveImage">
+  <component name="RunManager" selected="npm.ExamAdmin">
     <configuration name="ExamApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam-backend" />
       <extension name="coverage">
@@ -211,9 +505,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileStorageUtilTest.testSaveImage" />
-        <item itemvalue="npm.build" />
         <item itemvalue="JUnit.PaperWordUtilsTest.createWordTest" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="JUnit.FileStorageUtilTest.testSaveImage" />
         <item itemvalue="JUnit.ExamApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
@@ -247,6 +541,14 @@
       <workItem from="1622546997902" duration="11862000" />
       <workItem from="1622563817871" duration="2000" />
       <workItem from="1622592173430" duration="437000" />
+      <workItem from="1622704990363" duration="1342000" />
+      <workItem from="1622710144041" duration="411000" />
+      <workItem from="1622791645369" duration="2094000" />
+      <workItem from="1622806584864" duration="1656000" />
+      <workItem from="1622859340015" duration="21478000" />
+      <workItem from="1623034553814" duration="656000" />
+      <workItem from="1623035619403" duration="273000" />
+      <workItem from="1623210423668" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="更正数据库">
       <created>1622377167578</created>
@@ -274,8 +576,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="更正数据库" />
     <option name="LAST_COMMIT_MESSAGE" value="更正数据库" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/online-exam-system-backend/src/main/java/me/jie2g/exam/controller/TeacherBankManageController.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

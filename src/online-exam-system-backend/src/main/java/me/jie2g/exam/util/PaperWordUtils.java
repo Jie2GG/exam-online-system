@@ -24,17 +24,12 @@ import java.util.TimeZone;
 public class PaperWordUtils {
 	
 	//region --字段--
-	private final File file;
 	private final XWPFDocument document;
 	private int questionNumber;
 	//endregion
 	
 	//region --构造函数--
-	private PaperWordUtils (String path) throws IOException {
-		this.file = new File (path);
-		if (this.file.exists ()) {
-			this.file.deleteOnExit ();
-		}
+	private PaperWordUtils () throws IOException {
 		this.document = new XWPFDocument ();
 		CTSectPr ctSectPr = this.document.getDocument ().getBody ().addNewSectPr ();
 		
@@ -114,7 +109,7 @@ public class PaperWordUtils {
 	public PaperWordUtils setSingleChoiceQue (List<BankSingleChoiceQue> singleChoiceQues, int singleScore) {
 		
 		if (singleChoiceQues == null) {
-			throw new NullPointerException ("singleChoiceQues 参数不能为 null");
+			return this;
 		}
 		
 		if (singleScore < 0) {
@@ -194,7 +189,7 @@ public class PaperWordUtils {
 	public PaperWordUtils setMultipleChoiceQue (List<BankMultipleChoiceQue> multipleChoiceQues, int multipleScore) {
 		
 		if (multipleChoiceQues == null) {
-			throw new NullPointerException ("multipleChoiceQues 参数不能为 null");
+			return this;
 		}
 		
 		if (multipleScore < 0) {
@@ -267,7 +262,7 @@ public class PaperWordUtils {
 	public PaperWordUtils setJudgeChoiceQue (List<BankJudgeQue> judgeChoiceQues, int judgeScore) {
 		
 		if (judgeChoiceQues == null) {
-			throw new NullPointerException ("judgeChoiceQues 参数不能为 null");
+			return this;
 		}
 		
 		if (judgeScore < 0) {
@@ -314,7 +309,7 @@ public class PaperWordUtils {
 	public PaperWordUtils setFillChoiceQue (List<BankFillQue> fillChoiceQues, int fillScore) {
 		
 		if (fillChoiceQues == null) {
-			throw new NullPointerException ("fillChoiceQues 参数不能为 null");
+			return this;
 		}
 		
 		if (fillScore < 0) {
@@ -354,8 +349,10 @@ public class PaperWordUtils {
 	 *
 	 * @throws IOException 如果发生 IO 异常
 	 */
-	public void save () throws IOException {
-		this.document.write (new FileOutputStream (this.file));
+	public byte[] save () throws IOException {
+		ByteArrayOutputStream stream = new ByteArrayOutputStream ();
+		this.document.write (stream);
+		return stream.toByteArray ();
 	}
 	//endregion
 	
@@ -364,12 +361,11 @@ public class PaperWordUtils {
 	/**
 	 * 创建 Word 文档
 	 *
-	 * @param path word 文档位置
 	 * @return Word 文档读写工具
 	 * @throws IOException 如果发生 IO 异常
 	 */
-	public static PaperWordUtils open (String path) throws IOException {
-		return new PaperWordUtils (path);
+	public static PaperWordUtils open () throws IOException {
+		return new PaperWordUtils ();
 	}
 	
 	private static void setParagraph (XWPFDocument doc, String fontFamily, boolean bold, long fontSize, ParagraphAlignment alignment, String content, long leftSpace) {

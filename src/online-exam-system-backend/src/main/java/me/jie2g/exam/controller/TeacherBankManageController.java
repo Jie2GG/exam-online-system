@@ -3,7 +3,7 @@ package me.jie2g.exam.controller;
 import me.jie2g.exam.service.AdminSubjectService;
 import me.jie2g.exam.service.TeacherBankManageService;
 import me.jie2g.exam.service.TeacherPaperService;
-import me.jie2g.exam.util.FileStorageUtil;
+import me.jie2g.exam.util.FileStoreUtils;
 import me.jie2g.exam.util.ServerResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +23,8 @@ public class TeacherBankManageController {
 	private TeacherBankManageService teacherBankManageService;
 	@Autowired
 	private AdminSubjectService adminSubjectService;
+	@Autowired
+	private FileStoreUtils fileStoreUtils;
 	
 	//    获取全部科目
 	@RequestMapping ("/getSubjectList")
@@ -68,24 +70,17 @@ public class TeacherBankManageController {
 	
 	// 上传题目配图
 	@RequestMapping (value = "/uploadPicture", method = RequestMethod.POST)
-	public ServerResponse uploadPicture (MultipartFile file, HttpServletRequest request) {
+	public ServerResponse uploadPicture (MultipartFile file) {
 		try {
 			byte[] bytes = file.getBytes ();
 			String url = "";
 			
 			try {
 				
-				String fileName = FileStorageUtil.getFileName ("jpg");
+				String fileName = FileStoreUtils.getFileName ("jpg");
+				url = this.fileStoreUtils.saveImage (bytes, fileName);
 				
-				// 返回资源路径
-				String img = FileStorageUtil.saveImage (bytes, fileName);
-				
-				url = FileStorageUtil.getExternalPath (
-						request.getScheme (),
-						request.getServerName (),
-						80,
-						img
-				);
+				System.out.println ("图片URL: " + url);
 				
 			} catch (Exception e) {
 				e.printStackTrace ();

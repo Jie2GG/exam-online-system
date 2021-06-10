@@ -1,51 +1,30 @@
 <template>
   <div class="home">
-    <HeaderTop title="在线考试系统">
-      <router-link class="header_login" slot="right" :to="userInfo.sno ? '/profile/info' : '/login'">
-        <span class="header_login_text" v-if="!userInfo.sno">
-          登录|注册
-        </span>
-        <span class="header_login_text" v-else>
-          <img :src="userInfo.stuImgSrc ? userInfo.stuImgSrc : require('../../common/imgs/profile.jpg')" class="profile_img">
-        </span>
-      </router-link>
+    <HeaderTop title="首页">
     </HeaderTop>
 
     <Swiper :lunbotuList="rotationImages" :isfull="true" class="swiper"></Swiper>
-
-    <!--:class="{ 'already-clock': alreadyClock }"-->
-    <div class="clock-container already-clock" @click="clickClock">
-      <div class="clock">
-        <div class="clock-top">
-          <i class="iconfont icondaqia"></i>
-          {{currentDate | date-format('YYYY-MM-DD')}}
-        </div>
-        <div class="clock-bottom">
-          打卡
-        </div>
+<div class="calendar" @click="toCalendar">
+      <div class="calendar-left">
+        <div style="float: left;width: 6px;height: 30px;background-color: #4ab8a1"></div>
+        <i class="iconfont iconrili"></i>
+        公告
+      </div>
+      <div class="calendar-right" v-if="userInfo.sno">
+        <i class="iconfont iconxiazai41"></i>
+       {{examCalendar[0].teaName}}{{examCalendar[0].noticeCreateTime | date-format('M')}}月{{examCalendar[0].noticeCreateTime | date-format('D')}}号发布
       </div>
     </div>
-
     <div class="sudoku_row"  >
       <div class="sudoku_item " :class="{opacity:curSelect===item.langId, recommend:item.isRecommend == '1', 'first_recommend':item.isRecommend == '1' && index == 0}"
            v-for="(item,index) in languagesInfo"
            :key="index" @touchstart="touchstart(item.langId)" @touchend="touchend" @click="toPaper(item.langId)">
-        <img :src="item.langImgSrc" width="40" height="40" >
-        {{item.langName}}
+        <img :src="item.langImgSrc" width="40" height="40" style="float: left;margin-left: 20px;">
+        <span style="float: left;margin-top: 12px;margin-left: 15px;">{{item.langName}}</span>
       </div>
     </div>
 
-    <div class="calendar" @click="toCalendar">
-      <div class="calendar-left">
-        <div style="float: left;width: 6px;height: 30px;background-color: #4ab8a1"></div>
-        <i class="iconfont iconrili"></i>
-        考试日历
-      </div>
-      <div class="calendar-right" v-if="userInfo.sno">
-        <i class="iconfont iconxiazai41"></i>
-        最新考试信息：{{examCalendar[0].teaName}}{{examCalendar[0].noticeCreateTime | date-format('M')}}月{{examCalendar[0].noticeCreateTime | date-format('D')}}号发布
-      </div>
-    </div>
+
   </div>
 </template>
 
@@ -173,18 +152,18 @@
       flex-wrap wrap
       background-color #fff
       margin-top 6px
-      .recommend
-        background url("../../common/imgs/corner-mark-recommend.png") no-repeat 0% 0%
-        background-size 40px 40px
-      .first_recommend
-        background url("../../common/imgs/corner-mark-recommend.png") no-repeat 0% 0%, url("../../common/imgs/corner-mark-top-right.png") no-repeat 100% 0%
-        background-size 40px 40px
+      // .recommend
+      //   background url("../../common/imgs/corner-mark-recommend.png") no-repeat 0% 0%
+      //   background-size 40px 40px
+      // .first_recommend
+      //   background url("../../common/imgs/corner-mark-recommend.png") no-repeat 0% 0%, url("../../common/imgs/corner-mark-top-right.png") no-repeat 100% 0%
+      //   background-size 40px 40px
       .sudoku_item
-        display flex
-        justify-content center
-        align-items center
+        // display flex
+        // justify-content center
+        // align-items center
         flex-direction column
-        width 33.3%
+        width 100%
         padding-top 10px
         padding-bottom 10px
         box-shadow 0px 0px 1px rgba(0,0,0,.5)

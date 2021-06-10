@@ -34,6 +34,14 @@ exports.cssLoaders = function(options) {
   function generateLoaders(loader, loaderOptions) {
     const loaders = []
 
+    // if(options.extract){
+    //   return ExtractTextPlugin.extract({
+    //     use:loaders,
+    //     publicPath:'../../',
+    //     fallback:'vue-style-loader'
+    //   })
+    // }
+
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
@@ -41,6 +49,7 @@ exports.cssLoaders = function(options) {
     } else {
       loaders.push('vue-style-loader')
     }
+
 
     loaders.push(cssLoader)
 

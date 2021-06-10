@@ -85,12 +85,12 @@ export const constantRouterMap = [
         component: () => import('@/views/student/scoreTable'),
         meta: { title: '成绩管理', icon: 'score' }
       },
-      {
-        path: 'score-chart',
-        name: 'ScoreChart',
-        component: () => import('@/views/student/scoreChart'),
-        meta: { title: '成绩图表', icon: 'chart' }
-      }
+      // {
+      //   path: 'score-chart',
+      //   name: 'ScoreChart',
+      //   component: () => import('@/views/student/scoreChart'),
+      //   meta: { title: '成绩图表', icon: 'chart' }
+      // }
     ]
   },
 
@@ -210,17 +210,6 @@ export const constantRouterMap = [
             meta: { title: '上传填空题', icon: 'excel' }
           }
         ]
-      }
-    ]
-  },
-
-  {
-    path: 'my-homepage',
-    component: Layout,
-    children: [
-      {
-        path: 'http://maweitao.top',
-        meta: { title: '个人主页', icon: 'link' }
       }
     ]
   },

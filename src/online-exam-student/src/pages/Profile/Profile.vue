@@ -1,10 +1,9 @@
 <template>
-  <div class="profile">
-    <HeaderTop title="个人中心">
-      <div class="header_message" slot="right" @click="toReplyDetail" v-show="userInfo.sno">
+  <div class="profile" >
+    <HeaderTop title="我的">
+     <div class="header_message" slot="right" @click="toReplyDetail" v-show="userInfo.sno">
         <span class="header_message_text">
           <i class="iconfont iconicoxinxiaoxi"></i>
-          <!--显示未读消息条数-->
           <mt-badge type="error" slot="right" size="small" v-show="unreadMsgCount ? true : false">{{unreadMsgCount}}</mt-badge>
         </span>
       </div>
@@ -22,9 +21,9 @@
           <p class="user-info-top" v-if="!userInfo.phone">{{userInfo.stuName || '登录/注册'}}</p>
           <p>
             <span class="user-icon">
-              <i class="iconfont iconshouji"></i>
+
             </span>
-            <span class="icon-mobile-number">{{userInfo.stuPhone || '暂无绑定手机号'}}</span>
+            <span class="icon-mobile-number">{{userInfo.sno || ''}}</span>
           </p>
         </div>
         <span class="arrow">
@@ -34,21 +33,21 @@
     </section>
 
     <section class="profile-items">
-      <div @click="toDetail('/profile/stuscore')">
-        <ProfileItem title="查看成绩" icon="iconchakan"></ProfileItem>
-      </div>
-      <div @click="toDetail('/profile/wrongcollection')">
-        <ProfileItem title="收藏题目" icon="iconshoucang-"></ProfileItem>
-      </div>
+<!--      <div @click="toDetail('/profile/stuscore')">-->
+<!--        <ProfileItem title="查看成绩" icon="iconchakan"></ProfileItem>-->
+<!--      </div>-->
+<!--      <div @click="toDetail('/profile/wrongcollection')">-->
+<!--        <ProfileItem title="收藏题目" icon="iconshoucang-"></ProfileItem>-->
+<!--      </div>-->
       <div @click="toDetail('/profile/examcalendar')">
-        <ProfileItem title="考试日历" icon="iconrili2"></ProfileItem>
+        <ProfileItem title="考试公告" icon="iconrili2"></ProfileItem>
       </div>
-      <div @click="toDetail('/profile/pswchange')">
+      <!-- <div @click="toDetail('/profile/pswchange')">
         <ProfileItem title="密码修改" icon="iconmima"></ProfileItem>
       </div>
       <div @click="toDetail('/profile/infochange')">
         <ProfileItem title="信息修改" icon="iconxinxi"></ProfileItem>
-      </div>
+      </div> -->
       <div @click="toDetail('/profile/feedback')">
         <ProfileItem title="反馈留言" icon="iconyijianfankui"></ProfileItem>
       </div>
@@ -201,7 +200,7 @@
         clearFix()
         position relative
         display block
-        background lightslategrey
+        background #118ab2
         padding 20px 10px
         .profile_image
           float left
@@ -242,7 +241,7 @@
         display flex
         justify-content center
         align-items center
-        background-color lightslategrey
+        background-color #ef476f
         margin-top 6px
         color #fff
         //box-shadow 0px 0px 1px rgba(0,0,0,.5)

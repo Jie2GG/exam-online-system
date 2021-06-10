@@ -6,14 +6,10 @@
       <input type="submit" class="search_submit" value="搜索"
              :class="isSelect?'opacity':''" @touchstart="toggleSelect" @touchend="toggleSelect">
     </form>
-    <section class="search_no_login" v-if="!userInfo.sno">
-      <i class="iconfont iconsousuo1"></i>
-      <h3>登录后即可搜索</h3>
-      <mt-button @click="$router.push('/login')">立即登录</mt-button>
-    </section>
+
 
     <!--关键字搜索试卷列表-->
-    <section class="list" v-show="!noSearchPapers">
+    <section class="list" v-if="!noSearchPapers">
       <ul class="list_container">
         <router-link :to="'/home/paper/detail/' + item.paperId" tag="li"
                      v-for="item in searchPapers" :key="item.paperId" class="list_li">
@@ -41,10 +37,52 @@
       </ul>
     </section>
 
-    <section class="search__login" v-if="userInfo.sno">
-      <img src="../../common/imgs/nopapersearch.png" alt="">
-      <h3>{{tips}}</h3>
+    <section v-else>
+      <div class="wrong_list" v-for="(item, index) in wrongPapersList" :key="item.paperId">
+        <div class="wrong_list_item" :class="{'corner_new':index == 0}">
+          <div class="wrong_title">
+            {{item.paperName}}
+          </div>
+          <div class="wrong_type">
+            试卷类型：{{item.paperType == 1 ? '随机组卷' : '固定组卷'}}
+          </div>
+          <div class="wrong_difficulty">
+            <span>难度系数：</span>
+            <Star :score="item.paperDifficulty" :size="24" />
+          </div>
+          <div class="wrong_item">
+            最终成绩：<span class="wrong_important">{{item.score || 0}}</span>分{{item.score == null ? '（强制关闭考试页面退出考试）' : ''}}
+          </div>
+          <div class="wrong_item">
+            试卷题数：总共<span class="wrong_important">{{item.totalNum}}</span>道，答错<span class="wrong_important">{{item.totalErrorNum}}</span>道
+          </div>
+          <div class="wrong_item">
+            单选题：总共<span class="wrong_important">{{item.singleNum}}</span>道，答错<span class="wrong_important">{{item.singleErrorNum}}</span>道，每题<span class="wrong_important">{{item.singleScore}}</span>分
+          </div>
+          <div class="wrong_item">
+            多选题：总共<span class="wrong_important">{{item.multipleNum}}</span>道，答错<span class="wrong_important">{{item.multipleErrorNum}}</span>道，每题<span class="wrong_important">{{item.multipleScore}}</span>分
+          </div>
+          <div class="wrong_item">
+            判断题：总共<span class="wrong_important">{{item.judgeNum}}</span>道，答错<span class="wrong_important">{{item.judgeErrorNum}}</span>道，每题<span class="wrong_important">{{item.judgeScore}}</span>分
+          </div>
+          <div class="wrong_item">
+            填空题：总共<span class="wrong_important">{{item.fillNum}}</span>道，答错<span class="wrong_important">{{item.fillErrorNum}}</span>道，每题<span class="wrong_important">{{item.fillScore}}</span>分
+          </div>
+          <div class="wrong_btn">
+            <div>
+              <mt-button size="small" type="danger" @click.native="toWrongDetail(item.paperId)" :disabled="item.score == null">查看错题记录</mt-button>
+            </div>
+            <div>
+              <mt-button size="small" type="primary" @click.native="toScoreDetail(item.paperId)" :disabled="item.score == null">查看成绩报告</mt-button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_tips">
+        <span>我是有底线的</span>
+      </div>
     </section>
+
   </div>
 </template>
 
@@ -108,6 +146,7 @@
       },
       toggleSelect(){
         this.isSelect = !this.isSelect;
+        // this.$router.push("/search")
       }
     },
 /*    watch: {

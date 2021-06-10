@@ -20,15 +20,7 @@ public class FileStorageUtilTest {
 	@Test
 	public void testSaveImage () {
 		System.out.println ("-------Start-------");
-		
-		try {
-//			FileStorageUtil.deleteImage ("http://localhost:8080/static/upload/img/c427dc51-ab96-4cb6-9c40-2d70b9b3e56f");
-			String p = FileStorageUtil.saveImage (null, "1.jpg");
-			System.out.println (p);
-		} catch (Exception e) {
-		
-		}
-		
+
 		System.out.println ("--------End--------");
 	}
 }

@@ -15,3 +15,9 @@ export const reqRandomInsertPaperInfo = (temp) => ajax(BASE_URL + '/randomInsert
 export const reqFixedInsertPaperInfo = (temp) => ajax(BASE_URL + '/fixedInsertPaperInfo', temp, 'POST')
 // 请求通过langId获取科目下的所有问题
 export const reqPaperQueDetailByLangId = (langId) => ajax(BASE_URL + '/getPaperQueDetailByLangId', { langId })
+
+// export const reqExportPaper=(paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore)=>ajax('http://47.99.117.35:8080/api/teacher/teacher/exportPaper',{ paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore },'POST')
+// export const reqExportPaper=(paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore)=>ajax('http://localhost:8080/exportPaper',{ paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore },'POST')
+export const reqExportPaper=(paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore)=>ajax(BASE_URL+'/exportPaper',{ paperId,title,subTitle,minutes,score,singleScore,multipleScore,judgeScore,fillScore },'POST')
+
+export const reqGetSubjectsList = () => ajax("http://47.99.117.35:8080/api/admin/getSubjectsList")

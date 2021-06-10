@@ -36,6 +36,7 @@ import PaperCard from '../pages/HomePaperStart/PaperCard/PaperCard.vue'*/
 // 路由组件懒加载
 const Home = () => import('@/pages/Home/Home.vue')
 const Wrong = () => import('@/pages/Wrong/Wrong.vue')
+const Exam = () => import('@/pages/Exam/Exam.vue')
 const Search = () => import('@/pages/Search/Search.vue')
 const Profile = () => import('@/pages/Profile/Profile.vue')
 
@@ -87,6 +88,14 @@ export default new VueRouter({
       ]*/
     },
 
+    {
+      path:'/exam',
+      name:'Exam',
+      component:Exam,
+      meta: {
+        showFooter: true
+      }
+    },
     {
       path:'/wrong',
       name:'Wrong',

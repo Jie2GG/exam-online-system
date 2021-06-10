@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <!-- 设置路由组件的视图位置 -->
     <transition :name="transitionName">
       <router-view class="Router"></router-view>
@@ -113,6 +113,7 @@
       this.socket.onclose = this.close()
     },
     methods: {
+
       init: function() {
         if (typeof (WebSocket) === undefined) {
           this.$message.error('您的浏览器不支持socket')

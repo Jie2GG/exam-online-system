@@ -5,7 +5,7 @@ import me.jie2g.exam.domain.BankJudgeQue;
 import me.jie2g.exam.domain.BankMultipleChoiceQue;
 import me.jie2g.exam.domain.BankSingleChoiceQue;
 import me.jie2g.exam.service.TeacherPaperService;
-import me.jie2g.exam.util.FileStorageUtil;
+import me.jie2g.exam.util.FileStoreUtils;
 import me.jie2g.exam.util.PaperWordUtils;
 import me.jie2g.exam.util.ServerResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 @CrossOrigin
@@ -26,7 +25,11 @@ public class TeacherPaperController {
 	@Autowired
 	private TeacherPaperService teacherPaperService;
 	
+	@Autowired
+	private FileStoreUtils fileStoreUtils;
+	
 	//    获取成绩列表信息
+	
 	@RequestMapping ("/getTeacherPapersList")
 	public ServerResponse getTeacherPapersList () {
 		Map<String, Object> map = new HashMap<> ();
@@ -105,43 +108,32 @@ public class TeacherPaperController {
 		}
 	}
 	
-	// 导出试卷
 	@RequestMapping (value = "/exportPaper", method = RequestMethod.POST)
-	public ServerResponse exportPaper (@RequestParam ("paperId") Integer paperId,
-	                                   @RequestParam ("title") String title,
-	                                   @RequestParam ("subTitle") String subTitle,
-	                                   @RequestParam ("minutes") Integer minutes,
-	                                   @RequestParam ("score") Integer score,
-	                                   @RequestParam ("singleScore") Integer singleScore,
-	                                   @RequestParam ("multipleScore") Integer multipleScore,
-	                                   @RequestParam ("judgeScore") Integer judgeScore,
-	                                   @RequestParam ("fillScore") Integer fillScore,
-	                                   HttpServletRequest request
-	) throws IOException {
-		// 查询题目
-		Map<String, Object> paper = teacherPaperService.getPaperQuesByPaperId (paperId);
+	public ServerResponse exportPaper (@RequestBody Map<String, Object> obj) throws IOException {
+		Integer paperId = (Integer) obj.get ("paperId");
+		String title = (String) obj.get ("title");
+		String subTitle = (String) obj.get ("subTitle");
+		Integer minutes = (Integer) obj.get ("minutes");
+		Integer score = (Integer) obj.get ("score");
+		Integer singleScore = (Integer) obj.get ("singleScore");
+		Integer multipleScore = (Integer) obj.get ("multipleScore");
+		Integer judgeScore = (Integer) obj.get ("judgeScore");
+		Integer fillScore = (Integer) obj.get ("fillScore");
 		
-		// 路径
-		String fileName = FileStorageUtil.getFileName ("doc");
-		String resourcePath = FileStorageUtil.ROOT_PATH_DOC;
+		Map<String, Object> paperMap = this.teacherPaperService.getPaperQuesByPaperId (paperId);
 		
-		// 保存到指定位置
-		PaperWordUtils.open (new File (resourcePath, fileName).getAbsolutePath ())
+		byte[] bytes = PaperWordUtils.open ()
 				.setTitle (title)
 				.setSubTitle (subTitle)
 				.setBasicInfo (minutes, score)
-				.setSingleChoiceQue ((List<BankSingleChoiceQue>) paper.get ("singleData"), singleScore)
-				.setMultipleChoiceQue ((List<BankMultipleChoiceQue>) paper.get ("multipleData"), multipleScore)
-				.setJudgeChoiceQue ((List<BankJudgeQue>) paper.get ("judgeData"), judgeScore)
-				.setFillChoiceQue ((List<BankFillQue>) paper.get ("fillScore"), fillScore)
+				.setSingleChoiceQue ((List<BankSingleChoiceQue>) paperMap.get ("singleData"), singleScore)
+				.setMultipleChoiceQue ((List<BankMultipleChoiceQue>) paperMap.get ("multipleData"), multipleScore)
+				.setJudgeChoiceQue ((List<BankJudgeQue>) paperMap.get ("judgeData"), judgeScore)
+				.setFillChoiceQue ((List<BankFillQue>) paperMap.get ("fillData"), fillScore)
 				.save ();
 		
-		String url = FileStorageUtil.getExternalPath (
-				request.getScheme (),
-				request.getServerName (),
-				80,
-				String.format (Locale.CHINA, "%s/%s", FileStorageUtil.STATIC_DOC, fileName)
-		);
+		String fileName = FileStoreUtils.getFileName ("doc");
+		String url = this.fileStoreUtils.saveDocument (bytes, fileName);
 		
 		return ServerResponse.createBySuccess ("导出试卷成功", url);
 	}

@@ -57,11 +57,6 @@
           <span>{{ scope.row.teaEmail || '暂无绑定邮箱' }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="手机号" align="center" width="140">
-        <template slot-scope="scope">
-          <span>{{ scope.row.teaPhone || '暂无绑定手机号' }}</span>
-        </template>
-      </el-table-column>
       <el-table-column prop="teaLastLoginTime" sortable label="最近登录时间" align="center" width="160">
         <template slot-scope="scope">
           <span v-if="scope.row.teaLastLoginTime">{{ scope.row.teaLastLoginTime | date-format }}</span>
@@ -267,8 +262,8 @@ export default {
     handleDownload(){
       this.downloadLoading = true
       import('@/vendor/Export2Excel').then(excel => {
-        const tHeader = ['教工号', '姓名', '性别', '邮箱', '手机号', '最近登录时间']
-        const filterVal = ['tno', 'teaName', 'teaSex', 'teaEmail', 'teaPhone', 'teaLastLoginTime']
+        const tHeader = ['教工号', '姓名', '性别', '邮箱', '最近登录时间']
+        const filterVal = ['tno', 'teaName', 'teaSex', 'teaEmail',  'teaLastLoginTime']
         const data = this.formatJson(filterVal, this.list)
         excel.export_json_to_excel({
           header: tHeader,
@@ -283,8 +278,8 @@ export default {
       let result = await reqGetTeachersList()
       let list = result.data
       import('@/vendor/Export2Excel').then(excel => {
-        const tHeader = ['教工号', '姓名', '性别', '邮箱', '手机号', '最近登录时间']
-        const filterVal = ['tno', 'teaName', 'teaSex', 'teaEmail', 'teaPhone', 'teaLastLoginTime']
+        const tHeader = ['教工号', '姓名', '性别', '邮箱',  '最近登录时间']
+        const filterVal = ['tno', 'teaName', 'teaSex', 'teaEmail',  'teaLastLoginTime']
         const data = this.formatJson(filterVal, list)
         excel.export_json_to_excel({
           header: tHeader,
@@ -305,9 +300,7 @@ export default {
           }
         } else if (j === 'teaEmail') {
           return v[j] || '暂无绑定邮箱'
-        } else if (j === 'teaPhone') {
-          return v[j] || '暂无绑定手机号'
-        } else {
+        }  else {
           return v[j]
         }
       }))

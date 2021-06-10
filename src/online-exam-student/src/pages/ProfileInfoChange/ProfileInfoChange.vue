@@ -21,7 +21,7 @@
       <mt-cell title="姓名" :value="stuName" is-link @click.native="changeName"></mt-cell>
       <mt-cell title="姓别" :value="stuSex" is-link @click.native="changeSex"></mt-cell>
       <mt-cell title="邮箱" :value="stuEmail" is-link @click.native="changeEmail"></mt-cell>
-      <mt-cell title="手机号" :value="stuPhone" is-link @click.native="changePhone"></mt-cell>
+      <!-- <mt-cell title="手机号" :value="stuPhone" is-link @click.native="changePhone"></mt-cell> -->
       <mt-button type="primary" size="large" @click.native="changeInfo">保存修改</mt-button>
     </div>
 

@@ -1,27 +1,69 @@
 <template>
   <div class="navbar">
-    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container"/>
-    <breadcrumb :class="{ 'mobile-breadcrumb': device !== 'desktop' }"/>
+    <hamburger :toggle-click="toggleSideBar" :is-active="sidebar.opened" class="hamburger-container" />
+    <breadcrumb :class="{ 'mobile-breadcrumb': device !== 'desktop' }" />
 
     <div class="right-menu">
       <template v-if="device!=='mobile'">
-        <screenfull id="screenfull" class="right-menu-item hover-effect"/>
+        <screenfull id="screenfull" class="right-menu-item hover-effect" />
       </template>
 
-      <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
+      <el-dropdown class="avatar-container right-menu-item hover-effect" >
         <div class="avatar-wrapper">
-          <img src="@/assets/images/teacher.jpg" class="user-avatar">
-          <i class="el-icon-caret-bottom"/>
+          <img src="@/assets/images/teacher.jpg"  class="user-avatar">
+          <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
-          <router-link class="inlineBlock" to="/">
-            <el-dropdown-item>
-              首页
-            </el-dropdown-item>
-          </router-link>
+          <!-- <router-link class="inlineBlock" to="/"> -->
+          <el-dropdown-item style="">
+            <div class="progress-item">
+              <div class="info_item">
+                <span>教师ID</span>
+                <span style="float: right;">{{ userInfo.tno }}</span>
+              </div>
+
+            </div>
+            <div class="progress-item">
+              <div class="info_item">
+                <span>姓名</span>
+                <span style="float: right;"> {{ userInfo.teaName }}</span>
+              </div>
+
+            </div>
+            <div class="progress-item">
+              <div class="info_item">
+                <span>性别</span>
+                <span style="float: right;">{{ userInfo.teaSex }}</span>
+              </div>
+
+            </div>
+            <div class="progress-item">
+              <div class="info_item">
+                <span>邮箱</span>
+                <span style="float: right;">{{ userInfo.teaEmail }}</span>
+              </div>
+
+            </div>
+           <!-- <div class="progress-item">
+              <div class="info_item">
+                <span>手机号码</span>
+                <span style="float: right;">{{ userInfo.teaPhone }}</span>
+              </div>
+
+            </div> -->
+            <div class="progress-item">
+              <div class="info_item">
+                <span>最近登录时间</span>
+                <span style="float: right;">{{ userInfo.teaLastLoginTime | date-format }}</span>
+              </div>
+
+            </div>
+
+          </el-dropdown-item>
+          <!-- </router-link> -->
           <div @click="confirmLogOut">
             <el-dropdown-item divided>
-              <span style="display:block;">退出登录</span>
+              <span style="display:block;float: right;">退出登录</span>
             </el-dropdown-item>
           </div>
         </el-dropdown-menu>
@@ -31,69 +73,98 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import Breadcrumb from '@/components/Breadcrumb'
-import Hamburger from '@/components/Hamburger'
-import Screenfull from '@/components/Screenfull'
-import { removeStore } from '@/utils/mUtils'
-import { reqLogOut } from '@/api/login'
+  import PanThumb from '@/components/PanThumb'
+  import Mallki from '@/components/TextHoverEffect/Mallki'
+  import {
+    mapGetters
+  } from 'vuex'
+  import Breadcrumb from '@/components/Breadcrumb'
+  import Hamburger from '@/components/Hamburger'
+  import Screenfull from '@/components/Screenfull'
+  import {
+    removeStore
+  } from '@/utils/mUtils'
+  import {
+    reqLogOut
+  } from '@/api/login'
 
-export default {
-  components: {
-    Breadcrumb,
-    Hamburger,
-    Screenfull
-  },
-  computed: {
-    ...mapGetters([
-      'sidebar',
-      'device'
-    ])
-  },
-  methods: {
-    toggleSideBar() {
-      this.$store.dispatch('ToggleSideBar')
+  export default {
+    components: {
+      Breadcrumb,
+      Hamburger,
+      Screenfull,
+      PanThumb,
+      Mallki
     },
-    confirmLogOut() {
-      this.$confirm('确定退出登录吗?', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(() => {
-        this.logout()
-      }).catch(() => {
-        /* this.$message({
-           type: 'info',
-           message: '已取消删除'
-         });*/
-      })
+    filters: {
+      statusFilter(status) {
+        const statusMap = {
+          success: 'success',
+          pending: 'danger'
+        }
+        return statusMap[status]
+      }
     },
-    async logout() {
-      const result = await reqLogOut()
-      if (result.statu === 0) {
-        // 移除localStorage中teacherInfo
-        removeStore('teacherInfo')
-        // 重置vuex中userInfo
-        this.$store.dispatch('resetUserInfo')
-        this.$message({
-          message: result.msg,
-          type: 'success'
-        })
-        // 为了重新实例化vue-router对象 避免bug
-        location.reload()
-      } else {
-        this.$message({
-          message: '系统错误，退出登录失败',
+    data() {
+      return {
+        teaImg: require('@/assets/images/teacher.jpg'),
+        statisticsData: {
+          article_count: 1024,
+          pageviews_count: 1024
+        }
+      }
+    },
+    computed: {
+      ...mapGetters([
+        'sidebar',
+        'device',
+        'userInfo'
+      ])
+    },
+    methods: {
+      toggleSideBar() {
+        this.$store.dispatch('ToggleSideBar')
+      },
+      confirmLogOut() {
+        this.$confirm('确定退出登录吗?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
           type: 'warning'
+        }).then(() => {
+          this.logout()
+        }).catch(() => {
+          /* this.$message({
+             type: 'info',
+             message: '已取消删除'
+           });*/
         })
+      },
+      async logout() {
+        const result = await reqLogOut()
+        if (result.statu === 0) {
+          // 移除localStorage中teacherInfo
+          removeStore('teacherInfo')
+          // 重置vuex中userInfo
+          this.$store.dispatch('resetUserInfo')
+          this.$message({
+            message: result.msg,
+            type: 'success'
+          })
+          // 为了重新实例化vue-router对象 避免bug
+          location.reload()
+        } else {
+          this.$message({
+            message: '系统错误，退出登录失败',
+            type: 'warning'
+          })
+        }
       }
     }
   }
-}
 </script>
 
 <style type="text/scss" rel="stylesheet/scss" lang="scss" scoped>
-.mobile-breadcrumb {
+  .mobile-breadcrumb {
   width: 50%;
   height: 50px;
   font-size: 8px !important;
@@ -150,7 +221,7 @@ export default {
       .user-avatar {
         width: 40px;
         height: 40px;
-        border-radius: 10px;
+        border-radius: 50%;
       }
       .el-icon-caret-bottom {
         position: absolute;
@@ -162,4 +233,3 @@ export default {
   }
 }
 </style>
-

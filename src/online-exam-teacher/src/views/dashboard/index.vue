@@ -1,30 +1,25 @@
 <template>
   <div :class="['dashboard-container',{'dashboard-padding' : device !=='mobile'}]">
-    <div class="teacher_info">
-      <el-col :xs="{span: 24}" :sm="{span: 12}" :md="{span: 12}" :lg="{span: 7}" :xl="{span: 7}">
-        <box-card />
-      </el-col>
-      <!--<pan-thumb :image="teaImg" style="float: left">
-        <span class="pan-info-roles">教师端</span>
-      </pan-thumb>-->
-    </div>
-
-    <div>
-      <img :src="emptyGif" class="emptyGif">
+    <div class="exam_info" style="margin-top:-50px;">
+      <ScoreChart></ScoreChart>
     </div>
   </div>
 </template>
 
 <script>
+import ScoreChart from '../student/scoreChart.vue'
 import { mapGetters } from 'vuex'
 import PanThumb from '@/components/PanThumb'
 import BoxCard from './components/BoxCard'
+import BoxCardExam from './components/BoxCardExam'
 
 export default {
   name: 'Dashboard',
   components: {
     PanThumb,
-    BoxCard
+    BoxCard,
+    ScoreChart,
+    BoxCardExam
   },
   data() {
     return {
@@ -42,18 +37,18 @@ export default {
 </script>
 
 <style type="text/scss" rel="stylesheet/scss" lang="scss" scoped>
-  .emptyGif {
-    display: block;
-    width: 45%;
-    margin: 0 auto;
+.emptyGif {
+  display: block;
+  width: 45%;
+  margin: 0 auto;
+}
+.dashboard {
+  &-container {
+    background-color: #e3e3e3;
+    min-height: 93vh;
   }
-  .dashboard {
-    &-container {
-      background-color: #e3e3e3;
-      min-height: 93vh;
-    }
-    &-padding {
-      padding: 50px 60px 0px;
-    }
+  &-padding {
+    padding: 50px 60px 0px;
   }
+}
 </style>
